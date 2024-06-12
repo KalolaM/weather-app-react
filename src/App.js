@@ -19,14 +19,19 @@ function App() {
 
   return (
     <div className="app">
-      <div className="search">
-        <input
-          value={location}
-          onChange={(event) => setLocation(event.target.value)}
-          onKeyPress={searchLocation}
-          placeholder="Enter location"
-          type="text"
-        />
+      <div className="header">
+        <div className="header-content">
+          <div className="logo">AccuWeather</div>
+          <div className="search">
+            <input
+              value={location}
+              onChange={(event) => setLocation(event.target.value)}
+              onKeyPress={searchLocation}
+              placeholder="Enter location"
+              type="text"
+            />
+          </div>
+        </div>
       </div>
       <div className="container">
         <div className="top">
